@@ -9,7 +9,8 @@ body { font-family: "Segoe UI", "Microsoft JhengHei", Arial, sans-serif; max-wid
 h1 { color: #003366; border-bottom: 3px solid #0066cc; padding-bottom: 10px; }
 h2 { color: #0066cc; margin-top: 40px; border-left: 4px solid #0066cc; padding-left: 10px; }
 h3 { color: #004488; }
-.diagram { background: white; border: 1px solid #ddd; border-radius: 8px; padding: 15px; margin: 20px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.diagram { background: white; border: 1px solid #ddd; border-radius: 8px; padding: 15px; margin: 20px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+.diagram img { max-width: 100%; height: auto; }
 .note { background: #eef6ff; border-left: 4px solid #0066cc; padding: 12px 15px; margin: 15px 0; }
 table { width: 100%; border-collapse: collapse; margin: 15px 0; background: white; }
 th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
@@ -28,26 +29,33 @@ footer { margin-top: 50px; font-size: 0.85em; color: #666; text-align: center; b
 <h2>1. 深層水泥拌合法 Deep Cement Mixing (DCM)</h2>
 <p>工程船在海面上定位，多軸攪拌工具穿透砂墊層及軟質海洋沉積土（含污染泥料卸置坑），邊注入水泥漿邊攪拌，形成水泥土柱。此法為免挖式地質改良，可原位固化軟土並鎖定污染物。</p>
 <div class="diagram">
-<p><em>[圖解：DCM 工程船 + 多軸攪拌 + 水泥土柱形成 | Diagram: DCM barge with multi-shaft mixing and cement-soil columns]</em></p>
+<img src="assets/dcm.jpg" alt="DCM Method Diagram">
+<p>深層水泥攪拌法（DCM）用於填海工程 | Deep Cement Mixing (DCM) Method for Marine Reclamation</p>
 </div>
 
 <h2>2. 隧道箱涵頂進法 Tunnel Box Jacking</h2>
 <p>預製大型鋼筋混凝土箱涵在機場快線路堤下方頂進。結合後方液壓推頂、頂部鋼絞線拉引、水平管棚保護及地質改良，並輔以嚴格沉降監測，確保鐵路在施工期間正常運作。</p>
 <div class="diagram">
-<p><em>[圖解：箱涵頂進 + 液壓千斤頂 + 管棚 | Diagram: Box jacking with hydraulic jacks and pipe canopy]</em></p>
+<img src="assets/box-jacking.jpg" alt="Box Jacking Diagram">
+<p>隧道箱涵頂進法（箱涵穿越活線鐵路） | Tunnel Box Jacking Method under Live Railway</p>
 </div>
 
 <h2>3. 後張法 Post-Tensioning（頂進底板應用）</h2>
 <p>Post-tensioning is a method of reinforcing concrete by tensioning high-strength steel strands <strong>after</strong> the concrete has hardened. This compresses the concrete, increasing its strength, crack resistance, and span capability.</p>
 <p>在 3RS 工程中，APM/BHS 隧道箱涵頂進時，頂進底板採用 1.2 m 厚的鋼筋及<strong>後張法</strong>混凝土筏基。臨時地錨用於抵抗推力。</p>
 <div class="diagram">
-<p><em>[圖解：後張法原理 | Diagram: Post-tensioned concrete slab principle with anchors and compression]</em></p>
+<img src="assets/post-tension-principle.jpg" alt="Post-Tensioning Principle">
+<p>後張法原理 | Post-tensioned concrete slab principle</p>
 </div>
 <div class="diagram">
-<p><em>[圖解：3RS 後張法頂進底板 | Diagram: Post-tensioned jacking slab under Airport Express Line]</em></p>
+<img src="assets/post-tension-jacking.jpg" alt="3RS Post-Tensioned Jacking Slab">
+<p>3RS 後張法頂進底板 | Post-tensioned jacking slab under Airport Express Line</p>
 </div>
 
 <h3>傳統鋼筋混凝土 vs 後張法比較</h3>
+<div class="diagram">
+<img src="assets/comparison.jpg" alt="RC vs Post-Tensioned Comparison">
+</div>
 <table>
 <tr><th>項目</th><th>傳統鋼筋混凝土 Conventional RC</th><th>後張法混凝土 Post-tensioned</th></tr>
 <tr><td>原理</td><td>鋼筋承受拉力</td><td>混凝土硬化後對鋼絞線施加拉力，使混凝土預先受壓</td></tr>
