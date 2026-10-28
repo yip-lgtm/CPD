@@ -50,6 +50,7 @@ footer { text-align: center; padding: 20px; font-size: 0.85em; color: #888; bord
 <!-- Geotechnical -->
 <div class="card" id="geotechnical">
 <h2>Geotechnical Engineering 地質工程</h2>
+
 <h3>深層水泥拌合法 Deep Cement Mixing (DCM)</h3>
 <p>工程船在海面上定位，多軸攪拌工具穿透砂墊層及軟質海洋沉積土，邊注入水泥漿邊攪拌，形成水泥土柱。此法為免挖式地質改良，可原位固化軟土並鎖定污染物。</p>
 <div class="diagram">
@@ -63,6 +64,43 @@ footer { text-align: center; padding: 20px; font-size: 0.85em; color: #888; bord
 <img src="assets/box-jacking.jpg" alt="Box Jacking">
 <p>隧道箱涵頂進法（穿越活線鐵路）</p>
 </div>
+
+<h3>Yuet Lai Court 坑開挖支護計算 | Pit Excavation Shoring</h3>
+<p>根據 RSE Chan Lit Ming 計算報告（G2645），分底部與頂部兩部分設計支護。</p>
+
+<div class="formula">
+<strong>土壓力：</strong><br>
+底部（depth 3.0 m）：Ka = 0.65，壓力 = 0.65 × 19 × 3.0 = 37.1 kN/m²<br>
+頂部（depth ~1.5 m）：壓力 = 14.8 kN/m²<br>
+彎矩：M = -p × L² / 12（簡化板計算）
+</div>
+
+<div class="diagram">
+<img src="assets/shoring-cross-section.jpg" alt="Shoring Cross Section">
+<p>坑開挖支護剖面圖 | Pit Excavation Shoring Cross-Section</p>
+</div>
+
+<div class="diagram">
+<img src="assets/shoring-bottom.jpg" alt="Bottom Portion Shoring">
+<p>底部支護（Channel waling + 5mm steel plate）</p>
+</div>
+
+<div class="diagram">
+<img src="assets/shoring-top.jpg" alt="Top Portion Shoring">
+<p>頂部支護（50×50 SHS）</p>
+</div>
+
+<div class="diagram">
+<img src="assets/shoring-force-logic.jpg" alt="Force Logic">
+<p>支護設計之力流邏輯 | Force Logic of Shoring Design</p>
+</div>
+
+<table>
+<tr><th>位置</th><th>構件</th><th>設計彎矩</th><th>檢查結果</th></tr>
+<tr><td>底部</td><td>127×64 Channel + 5mm plate</td><td>~4.16 kNm</td><td>O.K.</td></tr>
+<tr><td>頂部</td><td>50×50×3.2 SHS</td><td>~1.65 kNm</td><td>O.K.</td></tr>
+</table>
+<p>所有構件均按 S275 鋼結構規範檢查剪力、彎矩容量、屈屈及組合受力，結果均為 O.K.。</p>
 </div>
 
 <!-- Structural -->
@@ -167,7 +205,7 @@ Z = π/32 (D³ - d⁴/D)
 </div>
 
 <footer>
-Generated for ICE CPD / IPD study materials | 2026-10-26<br>
+Generated for ICE CPD / IPD study materials | 2026-10-28<br>
 Repo: https://github.com/yip-lgtm/CPD | 僅供學習參考
 </footer>
 </body>
